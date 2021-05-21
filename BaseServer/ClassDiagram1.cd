@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BaseServer.SupportUpdate" BaseTypeListCollapsed="true">
+    <Position X="6" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAKAQAAAAAAAEgAQQABEACQAAAEAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Data.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BaseServer.Data">
+    <Position X="0.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>YCjQQOQhAASA2ExM+DEnIAUKyAMBIVR6QqFMgxJuIFE=</HashCode>
+      <FileName>Data.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseServer.frmEntitySelector" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAgAAACCQAAEAAACwAAACAyAAFCEDEACgAAIAAAA=</HashCode>
+      <FileName>frmEntitySelector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseServer.frmInputLink" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAACICABAAEAAACAQQACAwEAAAACAAAAAgAAAAA=</HashCode>
+      <FileName>frmInputLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseServer.ListViewEx" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAEAAAAAAAAAQEAAAAAAAAQAAAICA=</HashCode>
+      <FileName>ListViewEx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseServer.ListViewItemComparer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>ListViewEx.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BaseServer.ListViewItemReverseComparer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>ListViewEx.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BaseServer.ListViewItemDateComparer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>ListViewEx.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BaseServer.ListViewItemReverseDateComparer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>ListViewEx.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BaseServer.Plot" Collapsed="true">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAABAgAAAAAoAIBQBAAAAAAAAgAAABAAAAAA=</HashCode>
+      <FileName>Plot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseServer.PrintReport">
+    <Position X="11.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>YAVQAAUCAUMAAARAwAAIAEqiQQIAAIAAAIAUBBAAgAE=</HashCode>
+      <FileName>PrintReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseServer.ServerSQL" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>YrpCQOyEICWA1gpMqDBokASqsIOBIRg6GiFogUAOCFk=</HashCode>
+      <FileName>ServerSQL.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BaseServer.Settings">
+    <Position X="8.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gAABAAAAIEAAAEABgAQQAAAECAAACAACAEAAEAAAAAA=</HashCode>
+      <FileName>ServerSQL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseServer.Properties.Settings">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAEAAAAAFAAAAIAAACAABCAACAAAAAAAACAA=</HashCode>
+      <FileName>Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="BaseServer.GroupItem" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEIAAAAAAAAAAAAAAAQAAAAAAAAACEAAAAAAAAA=</HashCode>
+      <FileName>Data.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="BaseServer.PointSelector" Collapsed="true">
+    <Position X="9.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQIQABAAACAAAAAAIAAAAIAAAAAAAAA=</HashCode>
+      <FileName>frmEntitySelector.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BaseServer.ParamGroup">
+    <Position X="6" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>ServerSQL.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BaseServer.ParamTable">
+    <Position X="7.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAQAAAAAAAAAAAAAAEQAAAAAAAAAA=</HashCode>
+      <FileName>ServerSQL.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BaseServer.DatabaseFrom">
+    <Position X="4.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAABAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServerSQL.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

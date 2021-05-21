@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5244E7B-C35A-40E5-B0FF-6F7609690907}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataEditor</RootNamespace>
+    <AssemblyName>DataEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\RemX\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\RemX\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\RemX\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Editor.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\RemX\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\DataEditor.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Administrative Tools.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBaseEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseEditor.Designer.cs">
+      <DependentUpon>frmBaseEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDataEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataEditor.Designer.cs">
+      <DependentUpon>frmDataEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInputLinkOPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputLinkOPC.Designer.cs">
+      <DependentUpon>frmInputLinkOPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInputNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputNumber.Designer.cs">
+      <DependentUpon>frmInputNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInputPtName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputPtName.Designer.cs">
+      <DependentUpon>frmInputPtName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInputString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputString.Designer.cs">
+      <DependentUpon>frmInputString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDataEditorExtUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPageProp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPageProp.Designer.cs">
+      <DependentUpon>frmPageProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassword.Designer.cs">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportEditor.Designer.cs">
+      <DependentUpon>frmReportEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportProp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportProp.Designer.cs">
+      <DependentUpon>frmReportProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchemeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchemeEditor.Designer.cs">
+      <DependentUpon>frmSchemeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchemeOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchemeOpen.Designer.cs">
+      <DependentUpon>frmSchemeOpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTuning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTuning.Designer.cs">
+      <DependentUpon>frmTuning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserInfo.Designer.cs">
+      <DependentUpon>frmUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StackMemory.cs" />
+    <Compile Include="frmTableGroupEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableGroupEditor.Designer.cs">
+      <DependentUpon>frmTableGroupEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportOpen.Designer.cs">
+      <DependentUpon>frmReportOpen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmBaseEditor.resx">
+      <DependentUpon>frmBaseEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDataEditor.resx">
+      <DependentUpon>frmDataEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputLinkOPC.resx">
+      <DependentUpon>frmInputLinkOPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputNumber.resx">
+      <DependentUpon>frmInputNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputPtName.resx">
+      <DependentUpon>frmInputPtName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputString.resx">
+      <DependentUpon>frmInputString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPageProp.resx">
+      <DependentUpon>frmPageProp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassword.resx">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportEditor.resx">
+      <DependentUpon>frmReportEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportProp.resx">
+      <DependentUpon>frmReportProp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchemeEditor.resx">
+      <DependentUpon>frmSchemeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchemeOpen.resx">
+      <DependentUpon>frmSchemeOpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTuning.resx">
+      <DependentUpon>frmTuning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserInfo.resx">
+      <DependentUpon>frmUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frmTableGroupEditor.resx">
+      <DependentUpon>frmTableGroupEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportOpen.resx">
+      <DependentUpon>frmReportOpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseServer\BaseServer.csproj">
+      <Project>{7506F0B2-5FAD-4E0E-940C-A72CD517FDEB}</Project>
+      <Name>BaseServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Draws.Plugins\Draws.Plugins.csproj">
+      <Project>{467E598F-8A25-4A26-A881-CD0A2365F771}</Project>
+      <Name>Draws.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IniFiles.Net\IniFiles.Net.csproj">
+      <Project>{C608AF2F-7F07-4BB9-B590-04D9E5B13BE3}</Project>
+      <Name>IniFiles.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PluginInterfaces\Points.Plugins.csproj">
+      <Project>{57912D2C-5E83-4D45-97B0-6EDD039CB98C}</Project>
+      <Name>Points.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarmlog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anchor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archives.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bringtofront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cascade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exportxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groups.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newpage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\operator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\props.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportlog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schemeedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sendtoback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switches.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switchlog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\systemlog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tables.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trends.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuningall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userlog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usersedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrative Tools.ico" />
+    <None Include="Resources\forward.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\CopyProps.png" />
+    <None Include="Resources\month.png" />
+    <None Include="Resources\daily.png" />
+    <None Include="Resources\hour.png" />
+    <None Include="Resources\text.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\preview1.png" />
+    <None Include="Resources\alignright.png" />
+    <None Include="Resources\aligncenter.png" />
+    <None Include="Resources\alignleft.png" />
+    <None Include="Resources\fontsizedown.png" />
+    <None Include="Resources\fontsizeup.png" />
+    <None Include="Resources\underline.png" />
+    <None Include="Resources\italic.png" />
+    <None Include="Resources\bold.png" />
+    <None Include="Resources\xy.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\pageprop.png" />
+    <None Include="Resources\reportprop.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

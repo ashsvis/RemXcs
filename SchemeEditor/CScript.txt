@@ -1,0 +1,20 @@
+using System;
+using System.Drawing;
+using System.Windows.Forms; 
+namespace SchemeEditor
+{
+	public class Simple
+	{
+		Draws drw;
+		public Simple(Draws drw)	// конструктор с одним параметром
+		{
+			this.drw = drw;
+		}
+		public void DoubleClick()
+ 		{
+            		Random r = new Random(); 
+            		drw.Fill.Color = Color.FromArgb(r.Next(255), r.Next(255), r.Next(255));
+			MessageBox.Show("Двойной щелчок", "Скрипт", MessageBoxButtons.OK);
+		}
+	}
+}

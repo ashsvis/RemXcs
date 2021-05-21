@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FetchROC809.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.0.2</Value>
+    </Setting>
+    <Setting Name="Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">502</Value>
+    </Setting>
+    <Setting Name="Station" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="CopyOwner" Type="System.String" Scope="User">
+      <Value Profile="(Default)">НПФ "ИКАР"</Value>
+    </Setting>
+    <Setting Name="CopyKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DateAddr" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7046</Value>
+    </Setting>
+    <Setting Name="TimeAddr" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7047</Value>
+    </Setting>
+    <Setting Name="NodeAddr" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
